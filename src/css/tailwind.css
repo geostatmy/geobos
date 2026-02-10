@@ -2445,7 +2445,7 @@
   &:where(.dark, .dark *) {
     &:hover {
       @media (hover: hover) {
-        color: var(--color-primary);
+        color: var(--color-secondary);
       }
     }
   }
@@ -2454,14 +2454,14 @@
   opacity: 70%;
 }
 .sticky #navbarCollapse li .ud-menu-scroll.active {
-  color: var(--color-primary);
+  color: var(--color-body-secondary);
   opacity: 100%;
 }
 .sticky .loginBtn {
   color: var(--color-dark);
   &:hover {
     @media (hover: hover) {
-      color: var(--color-primary);
+      color: var(--color-secondary);
     }
   }
   &:hover {
@@ -2475,7 +2475,7 @@
   &:where(.dark, .dark *) {
     &:hover {
       @media (hover: hover) {
-        color: var(--color-primary);
+        color: var(--color-secondary);
       }
     }
   }

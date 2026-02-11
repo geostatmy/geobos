@@ -72,6 +72,7 @@
     --color-gray-1: #f9fafb;
     --color-gray-2: #f3f4f6;
     --color-gray-7: #ced4da;
+    --color-secondary2: #2DA3FF;    
   }
 }
 @layer base {
@@ -852,6 +853,9 @@
   }
   .bg-secondary {
     background-color: var(--color-secondary);
+  }
+  .bg-secondary2 {
+    background-color: var(--color-secondary2);
   }
   .bg-stroke {
     background-color: var(--color-stroke);

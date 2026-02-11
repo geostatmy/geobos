@@ -261,7 +261,9 @@
   z-index: 1;
   animation: pulseGlow 3s ease-in-out infinite;
 }
-
+html, body {
+  overflow-x: hidden;
+}
 .layer1 {
   animation: pulseGlow 4s ease-in-out infinite;
 }

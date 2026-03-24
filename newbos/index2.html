@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GEOBOS User Guide - Coming Soon</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #0b0f2a;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Desktop (center) */
+    .container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .image-wrapper {
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    }
+
+    /* Mobile (top align) */
+    @media (max-width: 768px) {
+      .container {
+        min-height: auto;
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: 20px;
+      }
+
+      .image-wrapper {
+        max-width: 95%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="image-wrapper">
+      <!-- Tukar nama file ikut image sebenar -->
+      <img src="geobos_quick_guide.png" alt="GEOBOS User Guide Coming Soon" />
+    </div>
+  </div>
+</body>
+</html>

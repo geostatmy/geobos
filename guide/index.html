@@ -39,16 +39,17 @@
       width: 100%;
       height: auto;
       display: block;
-      border-radius: 12px;
+      border-radius: 8px;
       box-shadow: 0 20px 60px rgba(0,0,0,0.5);
     }
 
-    /* Mobile tweak */
-    @media (max-width: 768px) {
-      .image-wrapper {
-        max-width: 95%;
-      }
-    }
+    /* Mobile fix */
+@media (max-width: 768px) {
+  .container {
+    align-items: flex-start;  /* push ke atas */
+    padding-top: 30px;        /* jarak dari atas */
+  }
+}
   </style>
 </head>
 

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GEOBOS Payment</title>
+  <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+
+<body class="bg-gradient-to-br from-blue-50 to-white text-gray-800">
+
+
+<header class="bg-white border-b">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center gap-2">
+
+    <img src="./assets/images/logo/logo.svg"
+         class="h-8 w-auto" />  | Business Automation System 
+
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="text-center py-16 px-4">
+  <span class="bg-blue-100 text-blue-600 px-4 py-1 rounded-full text-sm font-medium">
+    Payment
+  </span>
+
+  <h1 class="text-4xl font-bold mt-4">
+    Lengkapkan Pembayaran Anda
+  </h1>
+
+  <p class="text-gray-500 mt-3 max-w-xl mx-auto">
+    Aktifkan sistem GEOBOS anda dengan melengkapkan pembayaran dan menghantar bukti.
+  </p>
+</section>
+
+<!-- NOTICE -->
+<!-- <div class="max-w-4xl mx-auto px-4 mb-8">
+  <div class="flex items-start gap-4 bg-blue-50 border border-blue-200 p-5 rounded-xl">
+    <div class="text-blue-600 text-xl">ℹ️</div>
+    <p class="text-sm leading-relaxed">
+      Pastikan anda telah mendaftar dan menggunakan GEOBOS sebelum membuat pembayaran.
+      Jika anda belum mendaftar,
+      <a href="#" class="text-blue-600 font-semibold underline">daftar disini</a>
+      untuk akses percubaan GEOBOS selama 14 hari secara percuma.
+    </p>
+  </div>
+</div> -->
+
+
+<!-- CTA -->
+  <section class="max-w-5xl mx-auto px-4">
+      <div class="flex items-start gap-4 bg-blue-100 border border-blue-400 p-5 rounded-xl">
+    <!-- <div class="text-blue-600 text-xl">ℹ️</div> -->
+    <div class="bg-blue-100 p-2 rounded-lg">
+    <i data-lucide="info" class="w-7 h-7 text-blue-600"></i>
+  </div>
+    <p class="text-sm leading-relaxed">
+      Pastikan anda telah mendaftar dan menggunakan GEOBOS sebelum membuat pembayaran.
+      Jika anda belum mendaftar,
+      <a href="https://www.geobos.app/newbos/reg.html" class="text-blue-600 font-semibold underline">daftar disini</a>
+      untuk akses percubaan GEOBOS selama 14 hari secara percuma.
+    </p>
+  </div><br>
+ </section>
+
+
+<!-- PAYMENT CARD -->
+<section class="max-w-5xl mx-auto px-4">
+  <div class="bg-white rounded-2xl shadow-lg p-8 grid md:grid-cols-2 gap-8 items-stretch">
+
+    <!-- LEFT -->
+    <div class="h-full flex flex-col justify-between">
+      <div>
+        <h2 class="font-semibold text-lg mb-6 text-blue-600">
+          MAKLUMAT PEMBAYARAN
+        </h2>
+
+        <div class="space-y-5 text-sm">
+
+          <div class="flex items-center gap-2">
+            <i data-lucide="user" class="w-5 h-5"></i>
+            <span class="text-gray-700">Nama Akaun : </span>    
+            <p class="font-semibold text-lg">Geostat Sdn Bhd</p>        
+          </div>
+
+          <div class="flex items-center gap-2">
+            <i data-lucide="building" class="w-5 h-5"></i>
+            <span class="text-gray-700">Bank : </span>    
+            <p class="font-semibold text-lg">Bank Islam</p>        
+          </div>
+
+          <div class="flex items-center gap-2">
+            <i data-lucide="credit-card" class="w-5 h-5"></i>
+            <span class="text-gray-700">No Akaun : </span>    
+            <p class="font-semibold text-lg">99880183944</p>    
+            <button onclick="copyAcc()"
+              class="bg-gray-100 px-3 py-1 text-xs rounded-lg hover:bg-gray-200">
+              Salin
+            </button>    
+          </div>
+          
+          <div class="flex items-center gap-2">
+            <i data-lucide="wallet" class="w-5 h-5"></i>
+            <span class="text-gray-700">Jumlah : </span>    
+            <p class="font-semibold text-lg">Mengikut Pakej (S1 atau S+)</p>        
+          </div>
+      
+          <div class="flex items-center gap-2">
+            <i data-lucide="at-sign" class="w-5 h-5"></i>
+            <span class="text-gray-700">Reference : </span>    
+            <p class="font-semibold text-lg">GEOBOS Username / Your Email</p>        
+          </div>
+
+
+        <div class="mt-6">
+          <div class="flex items-center gap-2">
+            <i data-lucide="Package" class="w-5 h-5"></i>
+            <span class="text-gray-700">GEOBOS Harga Pakej : </span>                
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 mt-5">
+            <!-- S1 -->
+            <div class="bg-gray-50 rounded-lg p-4 border text-center">
+              <p class="font-semibold text-blue-600">S1</p>
+              <p class="text-sm mt-2">RM100 / year</p>
+              <span class="inline-flex ml-1 rounded-full bg-green-500 px-2 py-0.2 text-sm font-medium text-white"
+                >
+                  Save RM80
+                </span>
+              <p class="text-xs text-gray-400">atau</p>
+              <p class="text-sm">RM15 / month</p>
+            </div>
+            <!-- S+ -->
+            <div class="bg-gray-50 rounded-lg p-4 border text-center">
+              <p class="font-semibold text-blue-600">S+</p>
+              <p class="text-sm mt-2">RM200 / year</p>
+              <span class="inline-flex ml-1 rounded-full bg-green-500 px-2 py-0.2 text-sm font-medium text-white"
+                >
+                  Save RM100
+                </span>
+              <p class="text-xs text-gray-400">atau</p>
+              <p class="text-sm">RM25 / month</p>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT QR -->
+    <div class="h-full flex flex-col justify-center items-center bg-gray-50 rounded-xl p-6 border">
+      <!-- <h3 class="text-blue-600 font-semibold mb-4">
+        IMBAS UNTUK BAYAR
+      </h3> -->
+
+      <!-- <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=BankIslam"
+           class="rounded-lg"> -->
+
+           <img src="./assets/images/qr/qr_bankislam_am.png"
+     class="w-200 h-200 object-contain mb-4" />
+
+      <!-- <p class="mt-4 font-medium">Bank Islam</p>
+      <p class="text-sm text-gray-400">DuitNow QR</p> -->
+    </div>
+
+  </div>
+  <!-- CTA -->
+  <div class="mt-5">
+    <div class="bg-white rounded-xl shadow p-6 flex flex-col md:flex-row items-center justify-between gap-4">
+
+      <div class="flex items-center gap-4">
+        <div class="bg-green-100 p-3 rounded-xl">
+          <i data-lucide="shield-check" class="w-7 h-7 text-green-600"></i>
+        </div>      
+        <div>
+          <h4 class="font-semibold text-lg">Hantar Bukti Pembayaran</h4>
+          <p class="text-sm text-gray-500">
+            Selepas pembayaran, sila isi maklumat anda dan hantar bukti untuk pengesahan akaun.
+          </p>
+        </div>
+      </div>
+      <a href="https://www.geobos.app/newbos/reg.html"
+         class="bg-blue-600 text-white px-6 py-3 rounded-xl flex items-center gap-2 hover:bg-blue-700">
+        <i data-lucide="upload" class="w-5 h-5"></i>
+        Maklumat & Bukti Pembayaran
+      </a>
+
+  <!--     <a href="#"
+         class="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition">
+         🚀 Hantar Bukti Pembayaran
+      </a> -->
+
+    </div>
+  </div>
+</section>
+
+
+<section class="max-w-5xl mx-auto px-4 mt-5">
+
+  <!-- MAIN CARD -->
+  <div class="bg-white rounded-2xl shadow-lg p-8">
+
+    <!-- TITLE -->
+    <h3 class="text-center text-blue-600 font-semibold mb-10">
+      CARA PEMBAYARAN
+    </h3>
+
+    <!-- STEPS -->
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <!-- STEP 1 -->
+      <div class="bg-gray-50 rounded-xl p-6 text-center flex flex-col items-center">
+
+        <div class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600 text-white font-bold mb-4">
+          1
+        </div>
+
+        <i data-lucide="landmark" class="w-8 h-8 text-blue-600 mb-3"></i>
+
+        <h4 class="font-semibold text-lg">Buat Pembayaran</h4>
+
+        <p class="text-sm text-gray-500 mt-2">
+          Lakukan pembayaran melalui Bank Transfer atau DuitNow.
+        </p>
+
+      </div>
+
+      <!-- STEP 2 -->
+      <div class="bg-gray-50 rounded-xl p-6 text-center flex flex-col items-center">
+
+        <div class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600 text-white font-bold mb-4">
+          2
+        </div>
+
+        <i data-lucide="receipt" class="w-8 h-8 text-blue-600 mb-3"></i>
+
+        <h4 class="font-semibold text-lg">Simpan Resit</h4>
+
+        <p class="text-sm text-gray-500 mt-2">
+          Simpan resit pembayaran atau screenshot.
+        </p>
+
+      </div>
+
+      <!-- STEP 3 -->
+      <div class="bg-gray-50 rounded-xl p-6 text-center flex flex-col items-center">
+
+        <div class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600 text-white font-bold mb-4">
+          3
+        </div>
+
+        <i data-lucide="cloud-upload" class="w-8 h-8 text-blue-600 mb-3"></i>
+
+        <h4 class="font-semibold text-lg">Hantar Bukti</h4>
+
+        <p class="text-sm text-gray-500 mt-2">
+          Upload resit pembayaran melalui borang.
+        </p>
+
+      </div>
+
+    </div>
+
+
+<div class="mt-5 border-t pt-6">
+
+  <div class="flex flex-col md:flex-row justify-center gap-6 text-sm text-gray-600">
+
+    <div class="flex items-center gap-2">
+      <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+      Pengesahan dalam masa 24 jam
+    </div>
+
+    <div class="flex items-center gap-2">
+      <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+      Pastikan jumlah dan reference betul
+    </div>
+
+    <div class="flex items-center gap-2">
+      <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+      Akaun akan diaktifkan selepas pengesahan
+    </div>
+
+  </div>
+
+</div>
+  </div>
+
+
+
+</section>
+
+<!-- TRUST INFO -->
+
+
+
+<footer>
+
+  <!-- BOTTOM BAR -->
+  <div class="border-b text-center text-sm text-gray-400 py-4">
+    © 2026 GEOBOS. All rights reserved.
+  </div>
+
+</footer>
+
+
+<!-- INFO -->
+<!-- SUPPORT -->
+<!-- <section class="max-w-4xl mx-auto px-4 mt-10 mb-16">
+  <div class="bg-white rounded-xl shadow p-5 flex flex-col md:flex-row justify-between items-center gap-4">
+
+    <div>
+      <h4 class="font-semibold">Perlukan bantuan?</h4>
+      <p class="text-sm text-gray-500">
+        Hubungi kami di WhatsApp jika ada sebarang pertanyaan.
+      </p>
+    </div>
+
+    <a href="#"
+       class="bg-green-500 text-white px-5 py-2 rounded-lg hover:bg-green-600">
+       WhatsApp Us
+    </a>
+
+  </div>
+</section> -->
+
+<script>
+function copyAcc() {
+  navigator.clipboard.writeText("99880183944");
+  alert("No akaun telah disalin!");
+}
+</script>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
+</html>
